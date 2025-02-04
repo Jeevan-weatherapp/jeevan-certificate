@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Certificate Generator</h2>
+        <div class="input-section">
+            <input type="text" id="nameInput" placeholder="Enter Name">
+            <input type="date" id="dateInput">
+            <button onclick="generateCertificate()">Generate Certificate</button>
+            <button onclick="downloadCertificate()">Download Certificate</button>
+        </div>
+        
+        <div class="certificate" id="certificate">
+            <p class="name" id="certName">Your Name</p>
+            <p class="date" id="certDate">Date: YYYY-MM-DD</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+</body>
+</html>
